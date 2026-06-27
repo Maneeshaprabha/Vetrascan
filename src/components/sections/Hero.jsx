@@ -13,8 +13,7 @@ const Hero = () => {
         <div className="absolute -left-[10%] top-[20%] w-[50%] h-[60%] bg-white/5 blur-3xl rounded-[100%] rotate-12 pointer-events-none border border-white/10"></div>
       </div>
 
-      {/* Imported Navbar Component */}
-      <Navbar />
+
 
       {/* Main Content */}
       <main className="relative z-10 flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-8 pt-20 lg:pt-32 gap-16">
