@@ -1,47 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Navbar from '../layout/Navbar'; // Ensure this path matches your folder structure
 
 const Hero = () => {
   return (
     <div className="relative min-h-screen bg-[#020817] overflow-hidden font-sans">
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 z-0">
-        {/* Abstract glowing vertical pillars */}
         <div className="absolute top-0 left-[30%] w-[10%] h-[80%] bg-blue-600/20 blur-[100px]"></div>
         <div className="absolute top-20 left-[45%] w-[5%] h-[60%] bg-cyan-400/20 blur-[80px]"></div>
         <div className="absolute top-10 right-[10%] w-[15%] h-[90%] bg-blue-700/20 blur-[120px]"></div>
-        
-        {/* Curved glass overlay approximation */}
         <div className="absolute -left-[10%] top-[20%] w-[50%] h-[60%] bg-white/5 blur-3xl rounded-[100%] rotate-12 pointer-events-none border border-white/10"></div>
       </div>
 
-      {/* Navbar */}
-      <nav className="relative z-50 flex items-center justify-between px-8 py-6 w-full max-w-7xl mx-auto">
-        <div className="text-white text-2xl font-bold tracking-wide">
-          Vetrascan
-        </div>
-        
-        <div className="hidden md:flex items-center space-x-8 text-slate-300 text-sm font-medium">
-          <a href="#home" className="hover:text-white transition">Home</a>
-          <a href="#features" className="hover:text-white transition">Features</a>
-          <a href="#how-it-works" className="hover:text-white transition">How It Works</a>
-        </div>
-
-        <div className="flex items-center space-x-4">
-          <button className="flex items-center bg-white text-slate-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition">
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-            Login
-          </button>
-          <button className="flex items-center bg-blue-500 text-white px-3 py-2 rounded-full text-sm font-medium hover:bg-blue-600 transition">
-            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-            </svg>
-            En
-          </button>
-        </div>
-      </nav>
+      {/* Imported Navbar Component */}
+      <Navbar />
 
       {/* Main Content */}
       <main className="relative z-10 flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-8 pt-20 lg:pt-32 gap-16">
@@ -70,7 +43,6 @@ const Hero = () => {
         >
           <div className="bg-white rounded-[24px] p-8 shadow-2xl relative overflow-hidden">
             
-            {/* Subtle top-right gradient accent inside the card */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-blue-100/50 to-transparent pointer-events-none"></div>
 
             {/* Card Header */}
@@ -134,7 +106,6 @@ const Hero = () => {
                 />
                 <button className="bg-[#1A1A1A] hover:bg-black text-white px-4 py-2.5 h-full flex items-center justify-center transition-colors">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    {/* Approximation of the shield/check icon */}
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" className="text-[#1A1A1A]" />
                     <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                   </svg>
