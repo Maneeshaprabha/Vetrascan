@@ -10,7 +10,7 @@ const Navbar = () => {
       
       {/* Desktop Links */}
       <div className="hidden md:flex items-center space-x-10 text-slate-300 text-sm font-medium">
-        <a href="#home" className="hover:text-white transition-colors">Home</a>
+        <a href="#home" className="hover:text-white transition-colors">Homegggggg</a>
         <a href="#features" className="hover:text-white transition-colors">Features</a>
         <a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a>
       </div>

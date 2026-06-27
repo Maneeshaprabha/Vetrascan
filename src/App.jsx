@@ -8,7 +8,7 @@ import Hero from './components/sections/Hero';
 
 function App() {
   return (
-    <div className="min-h-screen bg-brand-light font-sans text-slate-900">
+    <div>
       <Navbar />
       <main>
         <Hero />
