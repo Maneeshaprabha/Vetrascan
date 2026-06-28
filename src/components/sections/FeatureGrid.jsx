@@ -44,7 +44,7 @@ export default function Features() {
   </div>
   <div>
     {/* Corrected Cyan to Green Gradient */}
-    <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#00F0FF] to-[#00FF87] leading-tight">
+    <h2 className="text-4xl lg:text-5xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-[#00F0FF] to-[#00FF87] leading-tight">
       99% OCR<br />Accuracy
     </h2>
   </div>
